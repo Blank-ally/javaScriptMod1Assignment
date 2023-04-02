@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stith Mod 1 : Assignmnet 1 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"></head>
+<link rel="stylesheet" href="/css/main.css">
+<body>
+
+<main>
+     <!-- boostrarp wapper that contains 3 divs but i add a div with the classes col-8, and uncolored to display the header 
+     -->
+    <div class="justify-content-center">
+<!--
+    the justify center class centers all content in the div
+-->
+        <div class="row text-center">
+<!-- the text-center aligns all text to the center of the screen  im unclear on what the row class does ut think it gives the 
+ -->
+            <div class="col-8 uncolored"><h1>Mortgage Calculator</h1> </div></div>
+       <!-- the creates -->
+            <div class="row text-center">
+
+
+
+            <div class="col-4 uncolored">
+
+
+
+                <label for="loanPrinciple">Loan Principle: $</label>
+                <input id="loanPrinciple" type="number">
+
+                <label for="interestRate">Interest Rate: </label>
+                <input id="interestRate" type="number">%
+
+                <label for="loanLength"> Loan Length (years): </label>
+                <input id="loanLength" type="number">
+
+
+                <input type="button" class="btn btn-dark" value="Calculate Monthly Payment" onclick="mortgageCalculator()">
+
+
+            </div>
+
+
+            <div class="col-4 colored ">
+
+
+
+                <div class="result">
+                    <label for="monthlyPayment">Monthly Payment:  </label>
+                    <input id="monthlyPayment" type="text" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+
+<script src="/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
